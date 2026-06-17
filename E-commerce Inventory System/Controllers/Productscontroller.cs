@@ -10,7 +10,6 @@ namespace InventoryAPI.Controllers;
 [Route("api/[controller]")]
 public class ProductsController(InventoryDbContext db) : ControllerBase
 {
-    // GET api/products?search=&categoryId=&lowStock=
     [HttpGet]
     public async Task<IActionResult> GetAll(
         [FromQuery] string? search = null,
@@ -39,7 +38,6 @@ public class ProductsController(InventoryDbContext db) : ControllerBase
         return Ok(result);
     }
 
-    // GET api/products/5
     [HttpGet("{id:int}")]
     public async Task<IActionResult> GetById(int id)
     {
@@ -49,7 +47,6 @@ public class ProductsController(InventoryDbContext db) : ControllerBase
         return Ok(new ProductDto(p));
     }
 
-    // POST api/products
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateProductDto dto)
     {
@@ -77,7 +74,6 @@ public class ProductsController(InventoryDbContext db) : ControllerBase
         return CreatedAtAction(nameof(GetById), new { id = product.ProductId }, new ProductDto(product));
     }
 
-    // PUT api/products/5
     [HttpPut("{id:int}")]
     public async Task<IActionResult> Update(int id, [FromBody] UpdateProductDto dto)
     {
@@ -98,7 +94,6 @@ public class ProductsController(InventoryDbContext db) : ControllerBase
         return NoContent();
     }
 
-    // PATCH api/products/5/stock
     [HttpPatch("{id:int}/stock")]
     public async Task<IActionResult> AdjustStock(int id, [FromBody] AdjustStockDto dto)
     {
@@ -124,7 +119,6 @@ public class ProductsController(InventoryDbContext db) : ControllerBase
         return Ok(new { product.StockQuantity });
     }
 
-    // DELETE api/products/5 (soft delete)
     [HttpDelete("{id:int}")]
     public async Task<IActionResult> Delete(int id)
     {

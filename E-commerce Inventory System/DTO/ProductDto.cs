@@ -1,4 +1,6 @@
 ﻿using E_commerce_Inventory_System.Models;
+using System.ComponentModel.DataAnnotations;
+
 
 namespace E_commerce_Inventory_System.DTO
 {

@@ -2,13 +2,11 @@
 
 namespace E_commerce_Inventory_System.DTO
 {
-    public class OrderItemDto
+    public class AdjustStockDto
     {
         [Required]
-        public int ProductId { get; set; }
-
-        [Required]
-        [Range(1, int.MaxValue)]
         public int Quantity { get; set; }
+        public string? Notes { get; set; }
     }
+
 }
