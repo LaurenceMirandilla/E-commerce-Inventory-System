@@ -5,6 +5,7 @@ namespace E_commerce_Inventory_System.Models
 {
     public class Order
     {
+        [Key]
         public int OrderId { get; set; }
 
         [Required, MaxLength(20)]

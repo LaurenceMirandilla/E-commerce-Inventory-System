@@ -4,6 +4,7 @@ namespace E_commerce_Inventory_System.Models
 {
     public class StockMovement
     {
+        [Key]
         public int MovementId { get; set; }
         public int ProductId { get; set; }
         public Product Product { get; set; } = null!;

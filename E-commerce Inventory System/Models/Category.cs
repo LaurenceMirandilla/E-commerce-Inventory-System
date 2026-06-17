@@ -5,6 +5,7 @@ namespace E_commerce_Inventory_System.Models
 {
     public class Category
     {
+        [Key]
         public int CategoryId { get; set; }
 
         [Required, MaxLength(100)]

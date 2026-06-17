@@ -1,9 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace E_commerce_Inventory_System.Models
 {
     public class OrderItem
     {
+        [Key]
         public int OrderItemId { get; set; }
         public int OrderId { get; set; }
         public Order Order { get; set; } = null!;

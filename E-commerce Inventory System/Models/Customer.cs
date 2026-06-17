@@ -4,6 +4,7 @@ namespace E_commerce_Inventory_System.Models
 {
     public class Customer
     {
+        [Key]
         public int CustomerId { get; set; }
 
         [Required, MaxLength(200)]
