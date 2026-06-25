@@ -3,7 +3,7 @@ using E_commerce_Inventory_System.DTO;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace InventoryAPI.Controllers;
+namespace E_commerce_Inventory_System.Controllers;
 
 [ApiController]
 [Route("api/[controller]")]

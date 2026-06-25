@@ -16,7 +16,8 @@ namespace E_commerce_Inventory_System.DTO
         public string? Description { get; set; }
 
         [Required]
-        public int CategoryId { get; set; }
+        [MaxLength(100)]
+        public string CategoryName { get; set; } = string.Empty;
 
         [Required]
         [Range(0.01, double.MaxValue)]
