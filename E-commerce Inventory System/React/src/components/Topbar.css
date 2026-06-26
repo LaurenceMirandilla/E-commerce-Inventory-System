@@ -1,0 +1,64 @@
+.topbar {
+  padding: 22px 28px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #fff;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.topbar-title {
+  font-size: 22px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+  letter-spacing: -0.3px;
+}
+
+.topbar-sub {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 4px 0 0;
+}
+
+.status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.status-live {
+  background: #ECFDF5;
+  color: #047857;
+}
+.status-live .status-dot {
+  background: #10b981;
+}
+
+.status-offline {
+  background: #FEF2F2;
+  color: #B91C1C;
+}
+.status-offline .status-dot {
+  background: #ef4444;
+}
+
+.status-checking {
+  background: #F3F4F6;
+  color: #6b7280;
+}
+.status-checking .status-dot {
+  background: #9ca3af;
+}
